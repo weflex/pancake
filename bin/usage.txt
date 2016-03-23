@@ -1,0 +1,9 @@
+
+  pancake-cli [path/to/your/document]
+
+    -o --out    the path to save models and types
+    -h --help   print the help information
+
+  If you still occur the problem or other issues, please
+  contacts us at https://github.com/weflex/pancake/issues.
+

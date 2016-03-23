@@ -1,0 +1,28 @@
+{
+  "name": "pancake",
+  "version": "2.0.0",
+  "repository": {
+    "url": "https://github.com/weflex/pancake"
+  },
+  "description": "Build your RESTFul service by writing document not code",
+  "engines": {
+    "node": "5.0.0"
+  },
+  "bin": {
+    "pancake-cli": "./bin/cli.js"
+  },
+  "author": "Yorkie Liu <yorkiefixer@gmail.com>",
+  "devDependencies": {
+    "async": "1.5.2",
+    "comma-separated-values": "3.6.4",
+    "inflection": "1.8.0",
+    "jsonlint": "1.6.2",
+    "npm-registry-client": "7.1.0",
+    "org-mode-parser": "0.1.1",
+    "semver": "5.1.0",
+    "lodash": "4.6.1"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
+}
