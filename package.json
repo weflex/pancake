@@ -1,6 +1,6 @@
 {
   "name": "pancake",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "repository": {
     "url": "https://github.com/weflex/pancake"
   },
@@ -12,17 +12,11 @@
     "pancake-cli": "./bin/cli.js"
   },
   "author": "Yorkie Liu <yorkiefixer@gmail.com>",
-  "devDependencies": {
-    "async": "1.5.2",
+  "dependencies": {
     "comma-separated-values": "3.6.4",
     "inflection": "1.8.0",
-    "jsonlint": "1.6.2",
-    "npm-registry-client": "7.1.0",
-    "org-mode-parser": "0.1.1",
-    "semver": "5.1.0",
-    "lodash": "4.6.1"
-  },
-  "dependencies": {
-    "minimist": "^1.2.0"
+    "lodash": "4.6.1",
+    "minimist": "1.2.0",
+    "org-mode-parser": "0.1.1"
   }
 }
