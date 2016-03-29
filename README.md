@@ -1,4 +1,4 @@
-# pancake
+# Pancake
 
 [![NPM version][npm-image]][npm-url]
 [![Build status][travis-image]][travis-url]
@@ -7,20 +7,34 @@
 
 > Build your RESTFul service by writing document not code.
 
-This is an implementation in Node.js for [pancake-lang](./) which lets you build
-a RestFul service based on with [strongloop/loopback](https://github.com/strongloop/loopback)
-and [weflex/neaty](https://github.com/strongloop/loopback).
+### Usage
+
+```sh
+$ pancake-cli [path/to/your/document] -o ./models
+```
+
+### What's Pancake
+
+Pancake is mostly for developing a model system for the Node.js platform, so it of course contains
+the ECMAScript's built-in types as:
+
+- Number
+- String
+- Object
+- Boolean
+
+Pancake also owns the following features with love to build the all things:
+
+- metatype: the metatype has the ability to make types.
+- embedable: this type of models are not real for providing the RESTFul API, which is only used for
+  presenting a data structure in other models.
+- models: Every document may have a `MODELS` section which will be used for generating JSON that'd
+  be accepted by neaty or other frameworks.
 
 ### Installation
 
 ```
 npm install pancake -g
-```
-
-### Usage
-
-```sh
-$ pancake-cli [path/to/your/document] -o ./models
 ```
 
 ### License
