@@ -13,7 +13,7 @@
 $ pancake-cli [path/to/your/document] -o ./models
 ```
 
-### What's Pancake
+### What's PancakeD
 
 Pancake is mostly for developing a model system for the Node.js platform, so it of course contains
 the ECMAScript's built-in types as:
@@ -30,6 +30,25 @@ Pancake also owns the following features with love to build the all things:
   presenting a data structure in other models.
 - models: Every document may have a `MODELS` section which will be used for generating JSON that'd
   be accepted by neaty or other frameworks.
+
+### Get started with pancakeD
+
+#### .pancakerc
+
+The `.pancakerc` is a JSON file which lets us to define:
+
+- which documents should be included into the model building.
+- the output directory
+
+#### document structure
+
+Every document basically is consists of the following sections:
+
+- *RECOMMENDED* OVERVIEW options: namely the top of this document that we define `AUTHOR`, `TITLE` and others, this is recommended content even if the pancake builder doesn't take this into.
+- a *RECOMMENDED* top level headline named `STATUS OF THIS DOCUMENT`, that we will read the content there to get the document/specification status.
+- a *RECOMMENDED* top level headline named `METATYPE`, that we will read it to generate meta types dynamically.
+- a *RECOMMENDED* top level headline named `EMBEDABLE`, that we are using it to generate the embedable model.
+- a *RECOMMENDED* top level headline named `MODELS` that we are using to build the models.
 
 ### Installation
 
