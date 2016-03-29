@@ -13,7 +13,9 @@
   },
   "main": "lib/pancake.js",
   "scripts": {
-    "test": "node_modules/.bin/tape tests/test-*.js"
+    "test": "node_modules/.bin/tape tests/test-*.js",
+    "docs": "sh docs.sh",
+    "prepublish": "npm run docs"
   },
   "author": "Yorkie Liu <yorkiefixer@gmail.com>",
   "dependencies": {
