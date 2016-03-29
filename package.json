@@ -1,6 +1,10 @@
 {
   "name": "pancake",
   "version": "3.0.0",
+  "logo": {
+    "img": "https://avatars2.githubusercontent.com/u/12624675?v=3&s=200",
+    "url": "https://github.com/weflex/node-orgmode"
+  },
   "repository": {
     "url": "https://github.com/weflex/pancake"
   },
@@ -26,5 +30,10 @@
   },
   "devDependencies": {
     "tape": "4.5.1"
+  }, 
+  "firedoc": {
+    "linkNatives": true,
+    "paths": "./lib",
+    "dest": "./docs"
   }
 }
