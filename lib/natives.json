@@ -1,0 +1,9 @@
+{
+  "string"  : "String",
+  "number"  : "Number",
+  "bool"    : "Boolean",
+  "boolean" : "Boolean",
+  "array"   : "Array",
+  "object"  : "Object",
+  "date"    : "Date"
+}
