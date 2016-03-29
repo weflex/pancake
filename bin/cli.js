@@ -27,17 +27,7 @@ function check(srcPath, dstPath) {
 }
 
 function build(srcPath, dstPath, last) {
-  return pancake
-    .build(srcPath, last)
-    .forEach((name, model) => {
-      const pathname = path.join(dstPath, name + '.json');
-      // debug('wrote a json file to ' + pathname);
-      fs.writeFileSync(
-        pathname,
-        JSON.stringify(model, null, 2),
-        'utf8'
-      );
-    });
+  return pancake.build(srcPath, last)
 }
 
 if (argv.help || argv._.length === 0) {
@@ -57,13 +47,29 @@ if (argv.help || argv._.length === 0) {
     if (!config.documents && !config.files) {
       throw new TypeError('documents or files should be required to be an array');
     }
-    const dstPath = path.join(process.cwd(), config.output || './models');
     let last;
+    const dstPath = path.join(process.cwd(), config.output || './models');
+
+    // building the documents together with each others
     config.documents.forEach((dir) => {
       const _srcPath = path.join(srcPath, dir);
-      const _previous = 
       check(_srcPath, dstPath);
-      last = build(_srcPath, dstPath, last);
+      last = pancake.build(_srcPath, last);
+    });
+    // in last
+    if (!last) {
+      throw new TypeError('invalid program');
+    }
+
+    // write to file
+    last.complete().forEach((name, model) => {
+      const pathname = path.join(dstPath, name + '.json');
+      // debug('wrote a json file to ' + pathname);
+      fs.writeFileSync(
+        pathname,
+        JSON.stringify(model, null, 2),
+        'utf8'
+      );
     });
   }
 }
