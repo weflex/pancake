@@ -13,6 +13,23 @@ to define Database Schematics. Documents written in this language
 could be interpreted by Pancake Interpreters (the Interpreter) and
 thus generates executable code snippets.
 
+** Keyword Conventions
+
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
+"SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be
+interpreted as described in [[http://tools.ietf.org/html/rfc2119][RFC 2119]].
+
+** Typographic Conventions
+
+In this document, we use the following typographic conventions:
+
+- /Italic/
+Used for URLs, command names, MIME types, new terms where they are defined, and
+emphasis;
+
+- ~Constant width~
+Used for computer output, functions, code, and any literal text;
+
 ** Why Extracting Schematics Form Document?
 
 ** Why OrgMode?
