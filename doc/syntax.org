@@ -1,0 +1,26 @@
+#+TITLE:   Markup Syntax Guide for Pancacke(d)
+#+AUTHOR:  Scott Wang
+#+STARTUP: align indent
+#+OPTIONS: H:5
+
+
+* Overview
+
+** Abstract
+
+In this document, we define a markup language, Pancake (the Language),
+to define Database Schematics. Documents written in this language
+could be interpreted by Pancake Interpreters (the Interpreter) and
+thus generates executable code snippets.
+
+** Why Extracting Schematics Form Document?
+
+** Why OrgMode?
+
+* Headlines
+
+* Inline Markups
+
+* Tables, Images and Blocks
+
+* Keywords and Reserved Words
