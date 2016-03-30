@@ -1,4 +1,4 @@
-#+TITLE:   Markup Syntax Guide for Pancacke(d)
+#+TITLE:   Syntax for Pancacke Falvored OrgMode
 #+AUTHOR:  Scott Wang
 #+STARTUP: align indent
 #+OPTIONS: H:5
