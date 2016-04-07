@@ -4,7 +4,7 @@ const test = require('tape');
 const Utils = require('../lib/utils.js');
 
 test('pluralize', function(t) {
-  t.equal(Utils.pluralize('WeflexUserId'), 'weflexuserids');
+  t.equal(Utils.pluralize('WeflexUser'), 'weflex-users');
   t.end();
 });
 
