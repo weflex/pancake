@@ -1,0 +1,117 @@
+#+TITLE:   Syntax for Pancacke Falvored OrgMode
+#+AUTHOR:  Scott Wang
+#+STARTUP: align indent
+#+OPTIONS: H:5
+
+
+* Overview
+
+** Abstract
+
+In this document, we define a markup language, Pancake (/the Language/), to
+define Database Schematics. Documents written in this language could be
+interpreted by Pancake Interpreters (/the Interpreter/) and thus generates
+executable code snippets.
+
+** Keyword Conventions
+
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
+"SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be
+interpreted as described in [[http://tools.ietf.org/html/rfc2119][RFC 2119]].
+
+** Typographic Conventions
+
+In this document, we use the following typographic conventions:
+
+- /Italic/
+Used for URLs, command names, MIME types, new terms where they are defined, and
+emphasis;
+
+- ~Constant width~
+Used for computer output, functions, code, and any literal text;
+
+** Why Extracting Schematics Form Document?
+
+** Why OrgMode?
+
+* Keywords and Reserved Words
+
+** METATYPE
+
+** EMBEDDABLE
+
+** MODEL
+
+** IMMUTABLE
+
+** STATUS OF THIS DOCUMENT
+
+* Inline Markups
+
+** Emphasising with Italic and Bold Typefaces
+
+In the Language, italic typefaces are wrapped by two slash (~/~) characters. For
+example:
+
+#+BEGIN_EXAMPLE
+  /ITALIC TEXT/
+#+END_EXAMPLE
+
+Like italic faces, bold faces are wrapped by two asterisk (~*~) characters. An
+example would be:
+
+#+BEGIN_EXAMPLE
+  *BOLD TEXT*
+#+END_EXAMPLE
+
+** Showing Inline Code with Constant Width
+
+There're two ways to express constant width text snippet: you can either wrap it
+with tilde (=~=) or equivalence symbol (~=~). In other words, =~constant width~=
+and ~=constant width=~ are both valid for marking up inline code snippets:
+
+#+BEGIN_EXAMPLE
+  =TEXT CONSTANT WIDTH=
+#+END_EXAMPLE
+
+or,
+
+#+BEGIN_EXAMPLE
+  ~TEXT CONSTANT WIDTH~
+#+END_EXAMPLE
+
+** More Decorations: Underline and Strike Through
+
+You can make a piece of text underlined by wrapping it with two underline (~_~)
+characters, just like:
+
+#+BEGIN_EXAMPLE
+  _TEXT UNDERLINE_
+#+END_EXAMPLE
+
+Strike throughs are similar, just replace underline characters with plus (~+~)
+symbols:
+
+#+BEGIN_EXAMPLE
+  +TEXT STRIKE THROUGH+
+#+END_EXAMPLE
+
+** Hyperlinks in Action
+
+Hyperlinks are special text snippets that could link to other places in the same
+document, external document on the file system, or resources on web. Hyperlinks
+are defined as:
+
+#+BEGIN_EXAMPLE
+  [[BODY][DESCRIPTION]]
+#+END_EXAMPLE
+
+* Structural Markups
+
+** Declare Sections with Headlines
+
+** Properties and Tags
+
+** Tables and Images
+
+** Code Blocks
