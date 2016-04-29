@@ -50,6 +50,12 @@ Every document basically is consists of the following sections:
 - a *RECOMMENDED* top level headline named `EMBEDABLE`, that we are using it to generate the embedable model.
 - a *RECOMMENDED* top level headline named `MODELS` that we are using to build the models.
 
+### Pancake Ecosystem
+
+- [weflex/pancake-agent](https://github.com/weflex/pancake-agent) an agent library to execute the PTC(Pancake Target Code), which is based on loopback
+- [weflex/pancake-sdk-javascript](https://github.com/weflex/pancake-sdk-javascript) The pancake SDK for JavaScript builder, this tool is a library and CLI to let you build JavaScript library to
+connect your data store at browser-side.
+
 ### Installation
 
 ```
