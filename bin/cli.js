@@ -41,11 +41,15 @@ if (argv.help || argv._.length === 0) {
     const dstPath = path.join(process.cwd(), pancake.config.output || './models');
     check(null, dstPath);
     pancake.pack(srcPath).forEach((name, model) => {
-      const pathname = path.join(dstPath, name + '.json');
-      // debug('wrote a json file to ' + pathname);
+      const pathnameNoExt = path.join(dstPath, name);
       fs.writeFileSync(
-        pathname,
+        `${pathnameNoExt}.json`,
         JSON.stringify(model, null, 2),
+        'utf8'
+      );
+      fs.writeFileSync(
+        `${pathnameNoExt}.js`,
+        model.source,
         'utf8'
       );
     });
