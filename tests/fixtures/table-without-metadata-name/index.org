@@ -1,0 +1,18 @@
+#+TITLE:    test
+#+LANGUAGE: en
+
+* STATUS OF THIS DOCUMENT
+
+This document is a Draft version.
+
+* MODELS
+
+** M1
+| attr          | type                  | default | required  | security  |
+|---------------+-----------------------+---------+-----------+-----------|
+| foobar        | Number                | 0       | false     | rw-rw-r-- |
+
+#+NAME: M1
+| attr | type   | default | required | security  |
+|------+--------+---------+----------+-----------|
+| foob | Number | 0       | false    | rw-rw-r-- |
