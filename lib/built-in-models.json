@@ -1,0 +1,10 @@
+[
+  "AccessToken",
+  "Application",
+  "Role",
+  "RoleMapping",
+  "Scope",
+  "User",
+  "UserCredential",
+  "UserIdentity"
+]
