@@ -10,7 +10,7 @@
   },
   "description": "Build your RESTFul service by writing document not code",
   "engines": {
-    "node": "5.0.0"
+    "node": ">= 5.0.0"
   },
   "bin": {
     "pancake-cli": "./bin/cli.js"
